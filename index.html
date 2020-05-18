@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Grocery Shopping List</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>
+      Enter the items you wish to add to your grocery list below!
+    </h1>
+
+    <form id="shoppingForm">
+      <input id="addToList" type="text" />
+      <button type="submit">Add</button>
+    </form>
+
+    <h2>
+      Grocery items:
+    </h2>
+    <ul id="shoppingList">
+      <li>Double Click Me (or any item) to delete!</li>
+    </ul>
+    <script type="text/Javascript">
+
+      $("#shoppingForm").on("submit", function (e) {
+        var text = $("#addToList").val();
+        $("#shoppingList").append($("<li>").append(text));
+        $("#addToList").val("");
+        e.preventDefault();
+      });
+
+      $("#shoppingList").on("dblclick", "li", function () {
+        $(this).remove();
+      });
+    </script>
+  </body>
+</html>

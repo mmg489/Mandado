@@ -1,0 +1,30 @@
+body {
+  font-family: "Permanent Marker", cursive;
+  color: goldenrod;
+  background-color: navy;
+}
+h1 {
+  font-size: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+h2 {
+  font-size: 2rem;
+  padding-left: 35rem;
+  padding-right: 35rem;
+}
+form {
+  padding-left: 35rem;
+  padding-right: 35rem;
+}
+#addToList {
+  background-color: white;
+  font-family: "Permanent Marker", cursive;
+  font-size: 2rem;
+  color: goldenrod;
+}
+#shoppingList {
+  color: whitesmoke;
+  padding-left: 35rem;
+  padding-right: 35rem;
+}
